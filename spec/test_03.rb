@@ -1,6 +1,7 @@
 require_relative 'spec_helper'
 
-# Now that our Barracks and Footman classes are initializable, lets allow the player to train a footman from their barracks
+# Now that our Barracks and Footman classes are initializable, lets 
+# allow the player to train a footman from their barracks
 # This of course costs the player some resources
 
 describe Barracks do

@@ -1,8 +1,8 @@
 require_relative 'spec_helper'
 
 # Peasants are also units, but they are not soldiers like Footman are
-# These guys have other duties like mining for resources (let's not worry about that for now)
-# For our intents and purposes, Peasants are just another Unit which have lower HP and no AP (they can't attack other units)
+# For our intents and purposes, Peasants are just another Unit which 
+# have lower HP and no AP (they can't attack other units)
 
 describe Peasant do
 
