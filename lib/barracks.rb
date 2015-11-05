@@ -2,11 +2,12 @@ require_relative 'building'
 
 class Barracks < Building
 
-  attr_reader :gold, :food
+  attr_reader :gold, :food, :lumber
 
   def initialize
     @gold = 1000
     @food = 80
+    @lumber = 500
   end
 
   def train_footman

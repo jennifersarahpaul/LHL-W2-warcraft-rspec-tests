@@ -6,11 +6,11 @@ class Footman < Unit
   attr_reader :damage
 
   def initialize
-    super(60, 10) #health_points, attack_power
+    super(0, 10) #health_points, attack_power
   end
 
   def attack!(enemy)
-    enemy.damage(@attack_power)
+    self.dead? || enemy.dead? ? nil : enemy.damage(@attack_power)
   end
 
   def damage(attack_power)
@@ -20,6 +20,5 @@ class Footman < Unit
   def attack_building(building)
     building.damage_building(@attack_power)
   end
-
 
 end

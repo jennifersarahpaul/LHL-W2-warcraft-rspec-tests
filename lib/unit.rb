@@ -7,4 +7,8 @@ class Unit
     @attack_power = attack_power
   end
 
+  def dead? 
+    @health_points <= 0 ? true : false
+  end
+  
 end
