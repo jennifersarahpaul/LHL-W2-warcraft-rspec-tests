@@ -17,4 +17,9 @@ class Footman < Unit
     @health_points -= attack_power
   end
 
+  def attack_building(building)
+    building.damage_building(@attack_power)
+  end
+
+
 end

@@ -1,4 +1,6 @@
-class Barracks
+require_relative 'building'
+
+class Barracks < Building
 
   attr_reader :gold, :food
 
